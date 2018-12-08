@@ -1,0 +1,14 @@
+<html>
+	<head>
+		{%if title %}
+		<title>{{title}} - Hospital</title>
+		{% else %}
+		<title>Welcome to Hospital!</title>
+		{% endif %}
+	</head>
+	<body>
+		<div>Hospital: <a href="/index">Home</a></div>
+		<hr>
+		{% block content %}{% endblock %}
+	</body>
+</html>
